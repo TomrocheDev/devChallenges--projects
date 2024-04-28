@@ -26,6 +26,10 @@ body {
     background-color: var(--white-secondairy);
 }
 
+.container-fluid {
+    max-width: 1240px;
+}
+
 h1,
 h2 {
     font-size: var(--heading);
