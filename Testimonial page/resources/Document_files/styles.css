@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+:root {
+    --yellow: #f5c044;
+    --green: #4ca154;
+    --black: #18181b;
+    --dark-grey: #52525a;
+    --light-grey: #d1d1d8;
+    --white-primairy: #fff;
+    --white-secondairy: #fafaf9;
+
+    /* Typography */
+    --heading: 2.25rem;
+    --body-1: 1.25rem;
+    --body-2: 1rem;
+    --list-item: 0.875rem;
+}
+
+* {
+    font-family: "Sora", sans-serif;
+}
+
+body {
+    padding: 0 4rem;
+    height: 100vh;
+    background-color: var(--white-secondairy);
+}
+
+h1,
+h2 {
+    font-size: var(--heading);
+    font-weight: 700;
+}
+
+.text-med {
+    font-size: var(--body-1);
+    color: var(--dark-grey);
+}
+
+.icon-wrapper {
+    font-size: 2rem;
+    background-color: var(--yellow);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.icon-wrapper span {
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+li p {
+    font-size: var(--list-item);
+}
