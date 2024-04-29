@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+    /* Colors */
+    --black: #111315;
+    --bg: #1b1d1f;
+    --grey: #6f757c;
+    --green: #bee3cc;
+    --white: #fef7ee;
+    --yellow: #f6c768;
+    --red: #ed735d;
+
+    /* Typography */
+    --text-heading: 2rem;
+    --text-body: 1rem;
+    --text-m: 0.875rem;
+    --text-s: 0.75rem;
+    --text-xs: 0.625rem;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--black);
+    background-image: url(resources/bg-cafe.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 8% 2rem;
+}
+
+main .container:first-child {
+    background-color: var(--bg);
+    border-radius: 10px;
+    padding: 5rem;
+}
+
+.heading-wrapper::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-image: url(resources/vector.svg);
+    background-size: contain;
+    background-size: top right;
+    background-repeat: no-repeat;
+}
+
+.heading-wrapper h1,
+.heading-wrapper p,
+.heading-wrapper div {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: var(--white);
+    font-size: var(--text-heading);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: var(--white);
+}
+
+p {
+    color: var(--grey);
+    font-weight: 500;
+    font-size: var(--text-body);
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    padding: 0.3rem 1rem;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 8px;
+    font-size: var(--text-body);
+}
+
+.button-active {
+    background-color: var(--grey);
+}
+
+.popular {
+    padding: 0.3rem 1rem;
+    background-color: var(--yellow);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 40px;
+    font-size: var(--text-s);
+    font-weight: 700;
+}
+
+.item-image {
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.price {
+    color: var(--black);
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    background-color: var(--green);
+    font-weight: 700;
+    font-size: var(--text-s);
+}
+
+.rating {
+    color: var(--white);
+}
+
+.sold-out {
+    color: var(--red);
+    font-size: var(--text-m);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+    .button {
+        font-size: var(--text-m);
+    }
+}
